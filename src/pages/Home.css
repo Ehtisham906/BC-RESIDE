@@ -17,23 +17,19 @@
 @media screen and (max-width: 768px) {
     .heroHeading {
         font-size: 48px;
-        /* Adjust font size for smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     .heroHeading {
         font-size: 32px;
-        /* Adjust font size for even smaller screens */
     }
 }
 
 
 .heroSectionSearch .buyToSell {
-    display: flex;
-    background-color: white;
-    box-shadow: 0px 11px 100px 20px rgba(0, 0, 0, 0.15);
-
+    display: flex;  
+    width: fit-content;
 }
 
 
@@ -49,28 +45,15 @@
 
 }
 
-.heroSectionSearch .buyToSell {
-    display: flex;
-    width: fit-content;
-    background-color: white;
-}
+ 
 
 .buyToSell>* {
-    border: 1px solid black;
     width: 85px;
     height: 32px;
     border-radius: 10px 10px 0px 0px;
     font-size: 16px;
-
     border-bottom: 0px;
 }
-
-.heroSectionSearch .buyToSell {
-    display: flex;
-    width: fit-content;
-}
-
-
 .buyToSell>:hover {
     background-color: #003430;
     color: #FFF;
@@ -81,7 +64,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    border: 1px solid black;
     border-radius: 0px 10px 10px 10px;
     padding: 0px 10px 0px 10px;
     box-shadow: 0px 11px 100px 20px rgba(0, 0, 0, 0.15);
@@ -158,10 +140,18 @@ button.active {
     justify-content: space-around;
 }
 
-.buyService {
+.servicesContainer>* {
     width: 30.333%;
     display: flex;
     flex-direction: column;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.servicesContainer>:hover {
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
 .sellService {

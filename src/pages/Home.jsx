@@ -3,7 +3,7 @@ import "./Home.css"
 
 export default function Home() {
 
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState("buy");
   const [hoveredButton, setHoveredButton] = useState(null);
 
   const handleButtonClick = (option) => {
@@ -184,7 +184,7 @@ export default function Home() {
 
       <div className="ourServices mt-[60px]">
         <h1 className='serviceHeading text-center'>Our Services</h1>
-        <div className="servicesContainer mx-5">
+        <div className="servicesContainer mx-5 mt-5">
           <div className="buyService">
             <div className="imageIcon">
               <svg width="35" height="35" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
