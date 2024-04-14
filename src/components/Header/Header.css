@@ -111,7 +111,7 @@ a:nth-child(6) {
         font-weight: 500;
     }
 }
-@media screen and (max-width:921px) {
+@media screen and (max-width:937px) {
     .nav-items a {
         font-size: 98%;
         font-style: normal;
