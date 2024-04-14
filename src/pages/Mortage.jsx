@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function Mortage() {
+const Mortage = () => {
   return (
     <div>
       Mortage
+
     </div>
   )
 }
+
+export default Mortage
