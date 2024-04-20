@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+    .logofooter img{
+        width: 100% !important;
+    }
+}
+
+footer>:nth-child(1){
+    padding: 40px 40px 40px 40px;
+}
+
+@media screen and (max-width: 480px) {
+    footer>:nth-child(1){
+        padding: 40px 0px 40px 0px;
+    }
+    
+}

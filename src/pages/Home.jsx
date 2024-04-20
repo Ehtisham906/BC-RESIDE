@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Home.css"
 import { Link } from 'react-router-dom';
 import p1 from "../images/p1.png"
+import Footer from '../components/Footer/Footer';
 
 
 export default function Home() {
@@ -193,10 +194,9 @@ export default function Home() {
 
       <section className="ourServices  ">
         <h2 className='serviceHeading text-center text-4xl font-bold '>Our Services</h2>
-        <div className="servicesContainer cursor-pointer align-middle  flex flex-col sm:flex-row  justify-between flex-wrap mx-7 my-9 gap-12">
-
-
-          <div className="buyService flex flex-col flex-1 justify-center p-10 rounded-3xl ">
+  
+        <div className="servicesContainer cursor-pointer align-middle  flex flex-col sm:flex-row  justify-between flex-wrap  my-9 ">
+            <div className="buyService flex flex-col flex-1 justify-center p-10 rounded-3xl ">
             <div className="imageIcon">
               <svg width="45" height="45" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M39.6332 32.9763L32.8763 26.2193L27.6789 24.072C29.4095 21.6111 30.3366 18.6751 30.3333 15.6666C30.3333 7.5794 23.7539 1 15.6666 1C7.5794 1 1 7.5794 1 15.6666C1 23.7539 7.5794 30.3333 15.6666 30.3333C18.7013 30.3367 21.6615 29.3936 24.1349 27.6352L26.2765 32.8185L33.0333 39.5758C33.4666 40.0092 33.981 40.353 34.5472 40.5875C35.1134 40.822 35.7203 40.9428 36.3331 40.9428C36.9459 40.9428 37.5528 40.8221 38.119 40.5876C38.6852 40.3531 39.1997 40.0094 39.633 39.576C40.0664 39.1427 40.4102 38.6283 40.6447 38.0621C40.8792 37.4959 41 36.889 41 36.2762C41 35.6633 40.8793 35.0565 40.6448 34.4903C40.4103 33.9241 40.0666 33.4096 39.6332 32.9763ZM3.66666 15.6666C3.66666 9.04998 9.04998 3.66666 15.6666 3.66666C22.2833 3.66666 27.6666 9.04998 27.6666 15.6666C27.6666 22.2833 22.2833 27.6666 15.6666 27.6666C9.04998 27.6666 3.66666 22.2833 3.66666 15.6666ZM37.7475 37.6902C37.3721 38.0648 36.8635 38.2751 36.3333 38.2751C35.803 38.2751 35.2944 38.0648 34.919 37.6902L28.538 31.3093L26.5469 26.4897L31.3666 28.4809L37.7477 34.8618C38.1221 35.2372 38.3324 35.7458 38.3324 36.2761C38.3324 36.8063 38.122 37.3149 37.7475 37.6902Z" fill="white" stroke="white" strokeWidth="0.6" />
@@ -273,7 +273,7 @@ export default function Home() {
           </div>
 
           <div className='listingOverview flex justify-between '>
-            <div className='property flex-1  p-2 bg-red-500 h-[520px] mx-5'>
+            {/* <div className='property flex-1  p-2 bg-red-500 h-[520px] mx-5'>
               <div className="listImage rounded-xl p-2 h-[251.53px]">
 
                 <div className="distance">
@@ -450,8 +450,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className='property  flex-1 p-2 bg-red-500 h-[520px] mx-5'>
+            </div> */}
+            {/* <div className='property  flex-1 p-2 bg-red-500 h-[520px] mx-5'>
               <div className="listImage rounded-xl p-2 h-[251.53px]">
 
                 <div className="distance">
@@ -539,7 +539,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
           </div>
 
@@ -548,20 +548,20 @@ export default function Home() {
       </section>
 
       {/* Guide */}
-      <section className='guideSection'>
+      <section className='guideSection '>
         <div className='guideContents w-xl'>
-          <h2 className=' text-4xl font-bold'>The Guide</h2>
-          <p className='text-center mt-4'>With BC Reside revolutionary new series Real Tours, you can see Canadian real estate like never before. Accompany us on a journey through the most desirable neighborhoods on the Lower Mainland, led by the top realtors in British Columbia.</p>
+          <h2 className=' text-4xl font-bold text-center'>The Guide</h2>
+          <p className='text-center mt-4 '>With BC Reside revolutionary new series Real Tours, you can see Canadian real estate like never before. Accompany us on a journey through the most desirable neighborhoods on the Lower Mainland, led by the top realtors in British Columbia.</p>
           <button className='guideBtn mt-4'>Explore the guide</button>
 
         </div>
       </section>
 
       {/* Nesletter */}
-      <section className="newsletter">
-        <div className="svg">
-          <svg xmlns="http://www.w3.org/2000/svg" width="217" height="217" viewBox="0 0 217 217" fill="none">
-            <g clip-path="url(#clip0_146_1363)">
+      <section className="newsletter ">
+        <div className="svg justify-center mr-9 ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="217" viewBox="0 0 217 217" fill="none">
+            <g clipPath="url(#clip0_146_1363)">
               <path d="M208.715 0.348319C208.612 0.380954 208.504 0.336028 208.402 0.373749L4.964 76.6629C2.73508 77.5013 1.15844 79.5187 0.885069 81.8904C0.6117 84.2622 1.68611 86.5839 3.67259 87.9062L48.2734 117.636L64.5899 185.813C64.6327 185.992 64.7429 186.135 64.8001 186.307C66.2666 190.78 71.8988 192.2 75.2683 188.83L107.185 156.914L156.251 189.625C159.806 192.009 164.707 190.229 165.893 186.08L216.752 8.07217C218.118 3.28121 213.62 -1.22663 208.715 0.348319ZM80.055 129.664C79.0022 130.731 78.6852 131.595 78.316 132.939C78.3114 132.964 78.3004 132.988 78.2957 133.012L71.2017 158.807L61.0942 116.571L159.56 49.0543L80.055 129.664Z" fill="#003430" />
               <path d="M42.6394 174.331C40.1562 171.848 36.1328 171.848 33.6496 174.331L1.86241 206.118C-0.620803 208.602 -0.620803 212.625 1.86241 215.108C4.34605 217.592 8.36861 217.592 10.8522 215.108L42.6394 183.321C45.1226 180.838 45.1226 176.815 42.6394 174.331Z" fill="#003430" />
               <path d="M42.6394 136.187C40.1562 133.704 36.1328 133.703 33.6496 136.187L1.86241 167.974C-0.620803 170.457 -0.620803 174.481 1.86241 176.964C4.34605 179.448 8.36861 179.448 10.8522 176.964L42.6394 145.177C45.1226 142.694 45.1226 138.67 42.6394 136.187Z" fill="#003430" />
@@ -573,7 +573,23 @@ export default function Home() {
             </defs>
           </svg>
         </div>
+        <div className='newsletterContents  gap-5'>
+
+          <h2 className=' text-4xl font-bold '>Subscribe to newsletter</h2>
+          <p>Get the latest news and interesting offers and real estate</p>
+          <div className=' newsLetterSubscribe gap-1'>
+            <input className='border border-gray-600 rounded emialInput' type="email" id="email" placeholder='Your E-Mail Address' ></input>
+            <button className='newsletterBtn ml-3'>
+              Subscribe
+            </button>
+          </div>
+        </div>
+
       </section>
+
+
+      {/* Footer */}
+      <Footer />
     </>
   )
 }
