@@ -10,9 +10,47 @@
 
 }
 
-.heroHeading {
-    font-size: 64px;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+.heroSectionSearch {
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+.heroSectionSearch button {
+    transition: transform 0.3s ease;
+}
+
+.heroSectionSearch button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.heroHeading {
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.heroHeading {}
 
 @media screen and (max-width: 768px) {
     .heroHeading {
@@ -28,7 +66,7 @@
 
 
 .heroSectionSearch .buyToSell {
-    display: flex;  
+    display: flex;
     width: fit-content;
 }
 
@@ -45,7 +83,7 @@
 
 }
 
- 
+
 
 .buyToSell>* {
     width: 85px;
@@ -54,6 +92,7 @@
     font-size: 16px;
     border-bottom: 0px;
 }
+
 .buyToSell>:hover {
     background-color: #003430;
     color: #FFF;
@@ -123,48 +162,46 @@ button.active {
 
 
 /* Service Styles */
+.ourServices {
+    padding: 100px 100px 100px 100px;
+}
+
+@media screen and (max-width: 1143px) {
+    .ourServices {
+        padding: 50px 0px;
+    }
+}
+
 .serviceHeading {
-    color: var(--Black-Color, #202124);
+    color: #202124;
     text-align: center;
-    font-family: Helvetica;
-    font-size: 32px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     letter-spacing: 4.8px;
 }
 
-.servicesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.servicesContainer> {
+    height: 360px;
 }
 
-.servicesContainer>* {
-    width: 30.333%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    cursor: pointer;
+
+
+
+
+.buyService,
+.sellService,
+.rentService {
+
+    transition: transform 0.3s ease;
 }
 
-.servicesContainer>:hover {
+.servicesContainer>*:hover {
+    transform: scale(1.1);
     border-radius: 30px;
     background: #FFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 01px 10px rgba(0, 0, 0, 0.4);
 }
 
-.sellService {
-    display: flex;
-    flex-direction: column;
-    width: 30.333%;
-}
-
-.rentService {
-    display: flex;
-    flex-direction: column;
-    width: 30.333%;
-}
 
 .imageIcon {
     width: fit-content;
@@ -173,4 +210,115 @@ button.active {
     border-radius: 50%;
     padding: 10px;
     align-self: center;
+}
+
+
+
+/* Listing */
+.newListing {
+    background-image: url('../images/HeroSection.svg');
+    padding: 100px 0px 100px 0px;
+}
+
+.headingBtn button {
+    display: flex;
+    padding: 6px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20.27px;
+    opacity: 0.8;
+    background: #202124;
+    box-shadow: 0px 0.921px 9.214px 0.921px rgba(0, 0, 0, 0.25);
+}
+
+.headingBtn button span {
+    font-size: 11.056px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.listImage {
+    position: relative;
+    background-color: green;
+}
+
+.distance {
+    position: absolute;
+    border-radius: 20.27px;
+    opacity: 0.8;
+    background: #202124;
+
+    padding: 1.843px 13.82px;
+    color: #FFF;
+    box-shadow: 0px 0.921px 9.214px 1.843px rgba(0, 0, 0, 0.10);
+}
+
+.type {
+    position: absolute;
+    right: 13px;
+    border-radius: 3.685px;
+    opacity: 0.8;
+    background: #33D30B;
+    box-shadow: 0px 0.921px 9.214px 1.843px rgba(0, 0, 0, 0.10);
+    padding: 1.843px 13.82px;
+    justify-content: center;
+    align-items: center;
+    gap: 9.214px;
+    color: #FFF;
+}
+
+.image {
+    position: absolute;
+    bottom: -15px;
+    right: 13px;
+    width: 44.225px;
+    height: 44.225px;
+    border-radius: 44.225px;
+    border: 1.843px solid var(--white-Color, #FFF);
+    background-color: lightgray;
+    box-shadow: 0px 0.921px 9.214px 1.843px rgba(0, 0, 0, 0.25);
+}
+
+.image img {
+    border: 50%;
+
+}
+
+.propertyDetailsBtn button {
+    padding: 6px 15px;
+    gap: 4px;
+    border-radius: 20.27px;
+    opacity: 0.8;
+    background: #202124;
+    box-shadow: 0px 0.921px 9.214px 0.921px rgba(0, 0, 0, 0.25);
+}
+
+.propertyDetailsBtn button span {
+    font-size: 11.056px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+/* guide */
+.guideSection{
+    padding: 100px 100px 100px 100px;
+
+}
+.guideContents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.guideBtn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #003430;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
 }
