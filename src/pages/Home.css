@@ -94,8 +94,6 @@
 
 }
 
-
-
 .buyToSell>* {
     width: 85px;
     height: 32px;
@@ -104,10 +102,6 @@
     border-bottom: 0px;
 }
 
-.buyToSell>:hover {
-    background-color: #003430;
-    color: #FFF;
-}
 
 .buyToSellInputs {
     background: #FFF;
@@ -229,6 +223,7 @@ button.active {
 /* Listing */
 .newListing {
     background-image: url('../images/HeroSection.svg');
+    background-size: cover;
     padding: 100px 0px 100px 0px;
 }
 
@@ -252,7 +247,7 @@ button.active {
 
 .listImage {
     position: relative;
-    background-color: green;
+    
 }
 
 .distance {
@@ -376,7 +371,8 @@ button.active {
     font-weight: 700;
     line-height: normal;
 }
-
-.emialInput {
-    /* width: 100%; */
+.emailInput{
+    padding: 10px;
+    
 }
+

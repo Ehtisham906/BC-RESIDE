@@ -1,0 +1,52 @@
+.serviceCategories {
+    border-top: 1px solid #000;
+    background: #F5F1F1;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+}
+
+.toBuy,
+.toSell,
+.toRent,
+.consultation {
+    width: 140px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.servicesTypeBtns>*:hover {
+    color: #003430;
+    transform: scale(1.1);
+    font-weight: 700;
+    border-bottom: 3px solid #003430;
+}
+
+.buySectionContents {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/buyheroimage.png');
+    background-size: cover;
+}
+
+.serviceActive {
+    color: #003430;
+    transform: scale(1.1);
+    font-weight: 700;
+    border-bottom: 3px solid #003430;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .toSellHeading {
+        font-size: 48px;
+    }
+}
